@@ -1,16 +1,12 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-
-// Использование этой библиотеки для стабильной работы freeaddrinfo в MinGW
-#define _WIN32_WINNT 0x501
-
+#define _WIN32_WINNT 0x501 
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 #pragma comment(lib, "Ws2_32.lib")
 
 using std::cerr;
-
 int main()
 {
     WSADATA wsaData; // структура для хранение информации
